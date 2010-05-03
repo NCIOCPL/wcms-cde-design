@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="f6b5a77a-c2df-4f7f-a9b2-f3686cbb0a38" name="LayoutTemplateInfoLoader" linkedPackageId="06bca90d-07c2-4e2a-b904-f0e075963023" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="421543f9-8dd2-4afb-99f1-2b581cc0d1ca">
+      <profileInstance Id="9a70ef99-6aae-4309-bc12-e5c1c4bdb226" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="eac15aea-5985-43fe-be72-fe95c70de93e">
+      <profileInstance Id="2c8ce537-03cb-4123-b19d-dc0e44011079" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="7548a88a-4356-4e79-86b5-e9f8cf0aaaef">
+      <profileInstance Id="70cd6d54-e097-43df-bd7d-4c68274106a5" name="CSharpProfile">
+        <elementDefinition Id="c73ff5cb-fec2-40f3-a65a-fa8d5cc50270" />
+      </profileInstance>
+      <elementDefinition Id="580d64d5-1fb0-4c52-8900-c9a9aa1da397" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <package Id="06bca90d-07c2-4e2a-b904-f0e075963023" name="CDE">
+    <elementDefinition Id="8fbf638e-57de-4503-b65a-38a370abf411" />
+  </package>
+</SequenceDesignerModel>

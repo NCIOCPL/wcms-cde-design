@@ -17,6 +17,20 @@
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
   <ItemGroup>
+    <Content Include="LayoutTemplateInfoLoader.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="LayoutTemplateInfoLoader.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LayoutTemplateInfoLoader.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="LayoutTemplateInfoLoader.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="LayoutTemplateInfoLoader.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LayoutTemplateInfoLoader.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\CDE.UI.uml">
       <SubType>Content</SubType>
     </Content>
