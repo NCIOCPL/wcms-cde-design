@@ -24,6 +24,13 @@
       <SubType>Content</SubType>
       <DependentUpon>LayoutTemplateInfoLoader.classdiagram</DependentUpon>
     </Content>
+    <Content Include="LayoutTemplateInfoLoader.GetLayoutTemplateInfo.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="LayoutTemplateInfoLoader.GetLayoutTemplateInfo.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LayoutTemplateInfoLoader.GetLayoutTemplateInfo.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="LayoutTemplateInfoLoader.sequencediagram">
       <SubType>Content</SubType>
     </Content>

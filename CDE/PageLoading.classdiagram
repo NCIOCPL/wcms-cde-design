@@ -374,7 +374,7 @@
           </dependency>
         </suppliersInternal>
         <ownedOperationsInternal>
-          <operation Id="7cdc25d2-5c0b-4fbb-a377-b92f38406a37" name="GetDisplayTemplateForCurrentDisplay" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="7cdc25d2-5c0b-4fbb-a377-b92f38406a37" name="GetDisplayTemplateForCurrentDisplay" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="4bf01a6b-31df-4159-bbfc-decfc3b26ab0" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -390,6 +390,19 @@
                   <elementDefinition Id="eaa27e76-d4e9-43d4-9c90-78e678161d00" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="7ffedc9f-4ea2-4263-9150-a7b5657f7c8d" LastKnownName="DisplayTemplateInfo" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="64ee337d-2f8e-47d2-a272-426114878e7f" name="GetLayoutTemplateInfo" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2d2cff82-3a24-4536-a1bc-ecb05d6189c0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dce357df-7491-4793-b11f-9d7e2f5bf1d6" name="templateName" direction="In">
+                  <elementDefinition Id="6c19518d-7179-4e3b-be76-90b2046f8bef" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8f393f85-bd6c-4ee1-990e-3f593fd28fc7" LastKnownName="String" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>

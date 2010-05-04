@@ -1,25 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="b7d48c74-b748-4b25-979d-b0edebde3bcf" name="LayoutTemplateInfoLoader" linkedPackageId="812ab29c-0000-413f-9c66-49a43542c7be" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="92e71a9d-00d0-45ab-8a3c-c568109f5a7a">
-      <profileInstance Id="38e9ffdd-ac3c-442d-8eb0-e09c44b45d83" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="f2b5d82b-ef35-4fb4-a259-5f3ff75564c7">
-      <profileInstance Id="d2b09b3d-dd3a-423e-93ad-037a9ddb1837" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="c79262ee-78f6-46a5-aeba-fe8b3414b019">
-      <profileInstance Id="da4c1521-5641-452d-957d-cb395d4923e7" name="CSharpProfile">
-        <elementDefinition Id="c73ff5cb-fec2-40f3-a65a-fa8d5cc50270" />
-      </profileInstance>
-      <elementDefinition Id="580d64d5-1fb0-4c52-8900-c9a9aa1da397" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="c2cb8d8c-65ba-4fe3-a958-2a886ccdceed" name="LayoutInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -136,7 +116,7 @@
           </dependency>
         </suppliersInternal>
         <ownedOperationsInternal>
-          <operation Id="df230e5b-83f3-4310-9d6e-437859fb4429" name="GetDisplayTemplateForCurrentDisplay" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="df230e5b-83f3-4310-9d6e-437859fb4429" name="GetDisplayTemplateForCurrentDisplay" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="4bf01a6b-31df-4159-bbfc-decfc3b26ab0" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -152,6 +132,19 @@
                   <elementDefinition Id="eaa27e76-d4e9-43d4-9c90-78e678161d00" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="1516ff78-2134-4700-8ab2-4f15001193c3" LastKnownName="DisplayTemplateInfo" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="40d82815-63ad-42c8-9f1c-84702239010d" name="GetLayoutTemplateInfo" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2d2cff82-3a24-4536-a1bc-ecb05d6189c0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0c73ccff-cf27-48ef-a79e-ba02445f29e6" name="templateName" direction="In">
+                  <elementDefinition Id="6c19518d-7179-4e3b-be76-90b2046f8bef" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="accb2915-68e7-481f-9300-cd1a471c0a6c" LastKnownName="String" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -567,5 +560,25 @@
   </packagedElements>
   <package Id="812ab29c-0000-413f-9c66-49a43542c7be" name="CDE">
     <elementDefinition Id="8fbf638e-57de-4503-b65a-38a370abf411" />
+    <profileInstances>
+      <packageHasProfileInstances Id="92e71a9d-00d0-45ab-8a3c-c568109f5a7a">
+        <profileInstance Id="38e9ffdd-ac3c-442d-8eb0-e09c44b45d83" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f2b5d82b-ef35-4fb4-a259-5f3ff75564c7">
+        <profileInstance Id="d2b09b3d-dd3a-423e-93ad-037a9ddb1837" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c79262ee-78f6-46a5-aeba-fe8b3414b019">
+        <profileInstance Id="da4c1521-5641-452d-957d-cb395d4923e7" name="CSharpProfile">
+          <elementDefinition Id="c73ff5cb-fec2-40f3-a65a-fa8d5cc50270" />
+        </profileInstance>
+        <elementDefinition Id="580d64d5-1fb0-4c52-8900-c9a9aa1da397" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

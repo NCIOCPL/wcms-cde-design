@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d8b8f871-d951-4b64-8b45-b60d1a1ade9e" name="LayoutTemplateInfoLoader.GetLayoutTemplateInfo" linkedPackageId="6ae35ceb-b747-4abe-9d82-0ba83aa4426f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="6391cd15-30e3-472a-9d27-d28cc4f8b64c">
+      <profileInstance Id="ddf8a786-77d5-4584-ba06-c5fdfaa7b301" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c04cbb3a-4de5-4a48-b70f-e66caf9f36a5">
+      <profileInstance Id="adf4afc0-3708-4d57-a8b9-b9d38df73606" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="7c35e47c-8dc2-42d0-ad53-6647a9c610ce">
+      <profileInstance Id="39d6ce10-553a-463b-af5a-239c4de081a7" name="CSharpProfile">
+        <elementDefinition Id="c73ff5cb-fec2-40f3-a65a-fa8d5cc50270" />
+      </profileInstance>
+      <elementDefinition Id="580d64d5-1fb0-4c52-8900-c9a9aa1da397" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="982f1bb3-54f6-4b04-b1a4-2b9360cb2712" name="LayoutTemplateInfoLoader.GetLayoutTemplateInfo" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="420108be-c8ea-40d9-8dc7-a0982ed037a8" />
+        <nodes>
+          <initialNode Id="debc62fc-02ac-4803-965e-4c0b55624e8e" name="Initial1" isLeaf="false">
+            <elementDefinition Id="667e4aff-a61f-4665-8601-d825f2803017" />
+            <flowNodeTargets>
+              <controlFlow Id="0952f411-3318-439d-825d-1347278e620d" isLeaf="false">
+                <opaqueActionMoniker Id="9ed3dc83-7718-4bdb-b1db-076f5ee0b873" LastKnownName="Check static collection to see if template is already loaded." />
+                <elementDefinition Id="f852a4ea-e20f-413c-b95b-3a77390419e8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="9ed3dc83-7718-4bdb-b1db-076f5ee0b873" name="Check static collection to see if template is already loaded." isLeaf="false">
+            <elementDefinition Id="d0aa8f38-e7cd-497f-8ab2-4c57f6009d7b" />
+            <flowNodeTargets>
+              <controlFlow Id="d71eb0ac-8488-4eaf-ae1d-d630911cfce2" isLeaf="false">
+                <decisionNodeMoniker Id="49517a6c-d353-4732-861d-224877e9f042" LastKnownName="Decision1" />
+                <elementDefinition Id="726efca3-9d56-4679-afa1-fba90b26fe44" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="49517a6c-d353-4732-861d-224877e9f042" name="Decision1" isLeaf="false">
+            <elementDefinition Id="52feef46-392b-4a36-8541-3e0179d7d1b0" />
+            <flowNodeTargets>
+              <controlFlow Id="d0209943-3fc8-4111-971a-968f1efe9825" guard="Not Loaded" isLeaf="false">
+                <opaqueActionMoniker Id="5a16c5f4-8660-4e9e-b5a9-764365bb1c93" LastKnownName="Does an xml file exist with the name of the template" />
+                <elementDefinition Id="cfbebbf7-7d84-429e-b8f6-675239da1f73" />
+              </controlFlow>
+              <controlFlow Id="936b15cd-2f89-4e7a-af9b-eb2ca7170edf" isLeaf="false">
+                <mergeNodeMoniker Id="9cbbdeee-1ade-4cbe-8866-17fe4c4143c9" LastKnownName="Merge1" />
+                <elementDefinition Id="3e35ce9b-740a-4426-b26b-5c16998eac06" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="5a16c5f4-8660-4e9e-b5a9-764365bb1c93" name="Does an xml file exist with the name of the template" isLeaf="false">
+            <elementDefinition Id="c2c6d93b-44ff-4313-b261-25466ed1b811" />
+            <flowNodeTargets>
+              <controlFlow Id="b49e83c3-e9dd-4fb7-bb90-1bd570119d3a" isLeaf="false">
+                <decisionNodeMoniker Id="22d064e7-02c0-4137-809a-45855e946eca" LastKnownName="Decision2" />
+                <elementDefinition Id="5a90a17b-4fec-49f5-afa5-17b4b877359c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="22d064e7-02c0-4137-809a-45855e946eca" name="Decision2" isLeaf="false">
+            <elementDefinition Id="6974d41d-6dd3-43ba-8fbe-afb6a5caa3c7" />
+            <flowNodeTargets>
+              <controlFlow Id="8521fe92-9010-4659-9f67-f85a613ad93f" guard="File Exists" isLeaf="false">
+                <opaqueActionMoniker Id="50cbf1da-7845-4050-82bc-cad9b4033bdd" LastKnownName="Deserialize LayoutTemplateInfo" />
+                <elementDefinition Id="6344237b-d1e3-4944-b0af-75e03fc76b07" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="50cbf1da-7845-4050-82bc-cad9b4033bdd" name="Deserialize LayoutTemplateInfo" isLeaf="false">
+            <elementDefinition Id="b25b9d58-85f3-47b3-ada0-95593ee95045" />
+            <flowNodeTargets>
+              <controlFlow Id="0dad6645-88c1-452e-9a83-4f801814d045" isLeaf="false">
+                <opaqueActionMoniker Id="16571ffd-d464-465e-83cb-2006f1d2f350" LastKnownName="Put the template into the static collection." />
+                <elementDefinition Id="307f01d6-fd9f-44cb-8a3e-9bab5c4567eb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="16571ffd-d464-465e-83cb-2006f1d2f350" name="Put the template into the static collection." isLeaf="false">
+            <elementDefinition Id="61c7678e-4008-42a0-956b-6cea1cfb4aeb" />
+            <flowNodeTargets>
+              <controlFlow Id="7a586db2-f568-4955-9be1-d176d13a5292" isLeaf="false">
+                <mergeNodeMoniker Id="9cbbdeee-1ade-4cbe-8866-17fe4c4143c9" LastKnownName="Merge1" />
+                <elementDefinition Id="945fe253-2bc9-4010-9f4c-a5625e4731eb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="9cbbdeee-1ade-4cbe-8866-17fe4c4143c9" name="Merge1" isLeaf="false">
+            <elementDefinition Id="7f20f634-9429-47bb-8998-4a94eb4e2a99" />
+            <flowNodeTargets>
+              <controlFlow Id="aba40937-fcc0-443f-b129-50c907b23e95" isLeaf="false">
+                <opaqueActionMoniker Id="dec2d1ab-7fc7-4820-8fee-3c05ecd37731" LastKnownName="Return LayoutTemplateInfo" />
+                <elementDefinition Id="ed6098d5-88ce-4539-afd3-b609d076d67f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <activityFinalNode Id="a58c80ac-4b77-4006-a09c-d4396bb9ee23" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="3ca2c2e2-2e88-49e1-a112-efca95f33a90" />
+          </activityFinalNode>
+          <opaqueAction Id="dec2d1ab-7fc7-4820-8fee-3c05ecd37731" name="Return LayoutTemplateInfo" isLeaf="false">
+            <elementDefinition Id="0287cfd5-70e3-4618-a1a2-2f335612a34c" />
+            <flowNodeTargets>
+              <controlFlow Id="0e23a58d-3579-4b89-a057-0f517a32349c" isLeaf="false">
+                <activityFinalNodeMoniker Id="a58c80ac-4b77-4006-a09c-d4396bb9ee23" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="3829f865-2d21-4402-89f4-9554a364ca4e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="6ae35ceb-b747-4abe-9d82-0ba83aa4426f" name="CDE">
+    <elementDefinition Id="8fbf638e-57de-4503-b65a-38a370abf411" />
+  </package>
+</activityRootModel>
