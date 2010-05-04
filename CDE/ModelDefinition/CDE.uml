@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="249f147a-8a85-4f87-b448-eabe4d9472b1"
   name="CDE" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -778,7 +778,104 @@
                 LastKnownLocation="CDERoot.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="2e671eab-0450-4d84-98f5-0cf605c93e02"
+            name="displayTemplates"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3c646311-efba-429f-9aa5-7b5829b534de"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be076e30-f4c8-43c9-ba7b-8928c4e70d44">
+                    <propertyInstance
+                      Id="4b0a9da1-0205-46d8-8308-cdcdf87c229d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c05ebd5e-4709-4b79-8cc0-d1d2f7c35662">
+                    <propertyInstance
+                      Id="ccbfab43-e640-4d21-9125-a9b6a3d5e473"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fedb9ed2-c8d3-4ce8-87ec-7c4d0df0e202">
+                    <propertyInstance
+                      Id="3f63d445-e3b2-4b9d-a77b-7d900ed0d99a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01714887-7648-40a1-9bba-be3f052705bb">
+                    <propertyInstance
+                      Id="e29df317-f4dd-440c-b1cd-62ef6eb22bc3"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7d7e754-8946-4716-af57-769a174c294d">
+                    <propertyInstance
+                      Id="ad6e8132-52b5-40aa-a264-188f1b1ef1c4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="12e19028-b1a2-41a2-b2f6-3807f76f42fe"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="34663d21-8bb0-4911-b780-dbff71764145"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ff4c5b45-22e2-47e7-b3b9-a2358b0cbe59"
+                LastKnownName="DisplayTemplateInfo"
+                LastKnownLocation="CDE.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ea8ed976-f8fb-4add-9268-94d0bbe0707e"
+            name="GetDisplayTemplateForCurrentDisplay"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0de68790-97a8-4f6c-8e8f-26ed59c21b60"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ff4c5b45-22e2-47e7-b3b9-a2358b0cbe59"
+                      LastKnownName="DisplayTemplateInfo"
+                      LastKnownLocation="CDE.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>

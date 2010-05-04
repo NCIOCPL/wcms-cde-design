@@ -17,26 +17,26 @@
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
   <ItemGroup>
-    <Content Include="LayoutTemplateInfoLoader.classdiagram">
+    <Content Include="LayoutTemplateInfoLoadingProcess\LayoutTemplateInfoFactory.GetLayoutTemplateInfo.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="LayoutTemplateInfoLoader.classdiagram.layout">
+    <Content Include="LayoutTemplateInfoLoadingProcess\LayoutTemplateInfoFactory.GetLayoutTemplateInfo.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>LayoutTemplateInfoLoader.classdiagram</DependentUpon>
+      <DependentUpon>LayoutTemplateInfoLoadingProcess\LayoutTemplateInfoFactory.GetLayoutTemplateInfo.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="LayoutTemplateInfoLoader.GetLayoutTemplateInfo.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="LayoutTemplateInfoLoader.GetLayoutTemplateInfo.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>LayoutTemplateInfoLoader.GetLayoutTemplateInfo.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="LayoutTemplateInfoLoader.sequencediagram">
+    <Content Include="LayoutTemplateInfoLoadingProcess\LayoutTemplateInfoLoading.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="LayoutTemplateInfoLoader.sequencediagram.layout">
+    <Content Include="LayoutTemplateInfoLoadingProcess\LayoutTemplateInfoLoading.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>LayoutTemplateInfoLoader.sequencediagram</DependentUpon>
+      <DependentUpon>LayoutTemplateInfoLoadingProcess\LayoutTemplateInfoLoading.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="LayoutTemplateInfoLoadingProcess\LayoutTemplateInfoLoading.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="LayoutTemplateInfoLoadingProcess\LayoutTemplateInfoLoading.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LayoutTemplateInfoLoadingProcess\LayoutTemplateInfoLoading.sequencediagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\CDE.UI.uml">
       <SubType>Content</SubType>
@@ -72,5 +72,6 @@
     <Content Include="ModelDefinition\CDERoot.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="LayoutTemplateInfoLoadingProcess" />
   </ItemGroup>
 </Project>

@@ -1,28 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d8b8f871-d951-4b64-8b45-b60d1a1ade9e" name="LayoutTemplateInfoLoader.GetLayoutTemplateInfo" linkedPackageId="6ae35ceb-b747-4abe-9d82-0ba83aa4426f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="6391cd15-30e3-472a-9d27-d28cc4f8b64c">
-      <profileInstance Id="ddf8a786-77d5-4584-ba06-c5fdfaa7b301" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="c04cbb3a-4de5-4a48-b70f-e66caf9f36a5">
-      <profileInstance Id="adf4afc0-3708-4d57-a8b9-b9d38df73606" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="7c35e47c-8dc2-42d0-ad53-6647a9c610ce">
-      <profileInstance Id="39d6ce10-553a-463b-af5a-239c4de081a7" name="CSharpProfile">
-        <elementDefinition Id="c73ff5cb-fec2-40f3-a65a-fa8d5cc50270" />
-      </profileInstance>
-      <elementDefinition Id="580d64d5-1fb0-4c52-8900-c9a9aa1da397" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d8b8f871-d951-4b64-8b45-b60d1a1ade9e" name="LayoutTemplateInfoFactory.GetLayoutTemplateInfo" linkedPackageId="6ae35ceb-b747-4abe-9d82-0ba83aa4426f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <packagedElements>
     <activityRootModelHasActivity>
-      <activity Id="982f1bb3-54f6-4b04-b1a4-2b9360cb2712" name="LayoutTemplateInfoLoader.GetLayoutTemplateInfo" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+      <activity Id="982f1bb3-54f6-4b04-b1a4-2b9360cb2712" name="LayoutTemplateInfoFactory.GetLayoutTemplateInfo" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
         <elementDefinition Id="420108be-c8ea-40d9-8dc7-a0982ed037a8" />
         <nodes>
           <initialNode Id="debc62fc-02ac-4803-965e-4c0b55624e8e" name="Initial1" isLeaf="false">
@@ -119,5 +99,25 @@
   </packagedElements>
   <package Id="6ae35ceb-b747-4abe-9d82-0ba83aa4426f" name="CDE">
     <elementDefinition Id="8fbf638e-57de-4503-b65a-38a370abf411" />
+    <profileInstances>
+      <packageHasProfileInstances Id="6391cd15-30e3-472a-9d27-d28cc4f8b64c">
+        <profileInstance Id="ddf8a786-77d5-4584-ba06-c5fdfaa7b301" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c04cbb3a-4de5-4a48-b70f-e66caf9f36a5">
+        <profileInstance Id="adf4afc0-3708-4d57-a8b9-b9d38df73606" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="7c35e47c-8dc2-42d0-ad53-6647a9c610ce">
+        <profileInstance Id="39d6ce10-553a-463b-af5a-239c4de081a7" name="CSharpProfile">
+          <elementDefinition Id="c73ff5cb-fec2-40f3-a65a-fa8d5cc50270" />
+        </profileInstance>
+        <elementDefinition Id="580d64d5-1fb0-4c52-8900-c9a9aa1da397" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>

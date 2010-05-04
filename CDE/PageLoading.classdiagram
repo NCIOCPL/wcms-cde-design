@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="442ea931-a500-4968-b954-45fc4e54f8da" name="Page Loading" linkedPackageId="cc0d1565-4427-4c4d-a1c7-59189f702a13" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="442ea931-a500-4968-b954-45fc4e54f8da" name="Page Loading" linkedPackageId="cc0d1565-4427-4c4d-a1c7-59189f702a13" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="db8dc4b1-1ff1-485f-ae6b-458d37bdfe09">
       <elementDefinition Id="c8fbe711-1942-4077-ace7-a259edc5537d" />
@@ -492,7 +492,75 @@
               <referencedTypeMoniker Id="8f393f85-bd6c-4ee1-990e-3f593fd28fc7" LastKnownName="String" />
             </type_NamedElement>
           </property>
+          <property Id="5dbcd58f-24c5-4791-b8b3-e6754d339e0f" name="displayTemplates" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="e48adcb8-c5c6-445b-a6fa-ea5b26641ad2" name="field" profile="CSharpProfile">
+                <elementDefinition Id="3c646311-efba-429f-9aa5-7b5829b534de" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d53404c4-de1e-4fa1-8f68-191779cd6a8a">
+                    <propertyInstance Id="6b355baf-1bc4-48a5-9a45-86cd0100ce94" name="ClrAttributes">
+                      <elementDefinition Id="4b0a9da1-0205-46d8-8308-cdcdf87c229d" />
+                    </propertyInstance>
+                    <elementDefinition Id="be076e30-f4c8-43c9-ba7b-8928c4e70d44" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fe78e92f-4a57-4f91-9d35-01bd65ed7594">
+                    <propertyInstance Id="9d1b1202-c6a6-49d6-ab33-bf2d044e560a" name="IsConst" value="false">
+                      <elementDefinition Id="ccbfab43-e640-4d21-9125-a9b6a3d5e473" />
+                    </propertyInstance>
+                    <elementDefinition Id="c05ebd5e-4709-4b79-8cc0-d1d2f7c35662" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f60ed173-2939-4cd6-9bf3-a1ac0344aaae">
+                    <propertyInstance Id="40970cc8-cebd-4cca-a2e5-8e22f2644fe1" name="IsNullable" value="false">
+                      <elementDefinition Id="3f63d445-e3b2-4b9d-a77b-7d900ed0d99a" />
+                    </propertyInstance>
+                    <elementDefinition Id="fedb9ed2-c8d3-4ce8-87ec-7c4d0df0e202" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d9e9b399-b48d-4750-9574-0b71fa90e69d">
+                    <propertyInstance Id="b0d6a4dd-0098-450f-b239-4d4f9e23944d" name="IsVolatile" value="false">
+                      <elementDefinition Id="e29df317-f4dd-440c-b1cd-62ef6eb22bc3" />
+                    </propertyInstance>
+                    <elementDefinition Id="01714887-7648-40a1-9bba-be3f052705bb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c7c7d464-c83a-4e72-8cab-4dd6ab2d5aa3">
+                    <propertyInstance Id="d0ad83f6-b5de-4c2f-a5e3-2858b43aa4df" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="ad6e8132-52b5-40aa-a264-188f1b1ef1c4" />
+                    </propertyInstance>
+                    <elementDefinition Id="f7d7e754-8946-4716-af57-769a174c294d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString Id="59c68bfa-1674-4802-b07c-a3ce08017186" name="Lower" value="*">
+                <elementDefinition Id="12e19028-b1a2-41a2-b2f6-3807f76f42fe" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="a6ba67fa-3e28-4d52-9f19-54466ab499db" name="Upper" value="*">
+                <elementDefinition Id="34663d21-8bb0-4911-b780-dbff71764145" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="2e671eab-0450-4d84-98f5-0cf605c93e02" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7ffedc9f-4ea2-4263-9150-a7b5657f7c8d" LastKnownName="DisplayTemplateInfo" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="78f3f5ac-d7b0-4e60-aac5-df0f35176205" name="GetDisplayTemplateForCurrentDisplay" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ea8ed976-f8fb-4add-9268-94d0bbe0707e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a5069dba-28f2-41e5-a4cd-83e3008739ed" direction="Return">
+                  <elementDefinition Id="0de68790-97a8-4f6c-8e8f-26ed59c21b60" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7ffedc9f-4ea2-4263-9150-a7b5657f7c8d" LastKnownName="DisplayTemplateInfo" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
