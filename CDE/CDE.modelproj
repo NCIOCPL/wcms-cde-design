@@ -68,10 +68,18 @@
       <SubType>Content</SubType>
       <DependentUpon>PageLoading.sequencediagram</DependentUpon>
     </Content>
+    <Content Include="PageLoading.SnippetLoading.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PageLoading.SnippetLoading.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>PageLoading.SnippetLoading.sequencediagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\CDERoot.uml">
       <SubType>Content</SubType>
     </Content>
     <Folder Include="LayoutTemplateInfoLoadingProcess" />
+    <Folder Include="Migration" />
   </ItemGroup>
 </Project>

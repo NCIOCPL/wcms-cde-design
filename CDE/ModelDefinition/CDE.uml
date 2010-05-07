@@ -407,6 +407,67 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="4d959030-40ea-4985-b879-cb55bc535541"
+            name="templateSlots"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <lowerValueInternal>
+              <literalString
+                Id="b49dfcca-d1bc-4a58-89fc-e85b6ad966fa"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="c1a3a930-ff91-4d95-a67d-f0a934d476ff"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a5bd5e62-2519-4bb4-ba57-1eb3d39e2aa4"
+                LastKnownName="TemplateSlot"
+                LastKnownLocation="CDE.UI.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9da13a37-de92-453a-8ba6-c374cc5d56ba"
+            name="LoadGlobalTemplate"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="160542e9-b59c-42b1-86f6-bbc56a9bdd7c"
+            name="LoadLocalTemplate"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5c1d6bbd-b372-499d-a3be-f901d961afd0"
+            name="GetAllTemplateSlots"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -558,6 +619,55 @@
             </appliedStereotypesInternal>
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2ca6e1bb-3517-4d15-9ecb-409969d5bcd3"
+            name="GetGlobalTemplate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d9262f7c-a7e0-4d2f-a002-14fae544ec49"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ff4c5b45-22e2-47e7-b3b9-a2358b0cbe59"
+                      LastKnownName="DisplayTemplateInfo"
+                      LastKnownLocation="CDE.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1a5f71b7-cc74-4bf9-b6dc-9dc56ac08c7e"
+            name="GetLocalTemplate"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6f13caf9-1f61-4a9c-a53e-5cd2525d46c4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ff4c5b45-22e2-47e7-b3b9-a2358b0cbe59"
+                      LastKnownName="DisplayTemplateInfo"
+                      LastKnownLocation="CDE.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>

@@ -237,6 +237,35 @@
             <elementDefinition Id="1c60c2b2-57ed-461e-bd65-833548bdfb6b" />
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="49926e00-e87c-4828-9e29-81fac87a3804" name="templateSlots" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <lowerValueInternal>
+              <literalString Id="80d12379-93a4-4e40-a166-4b1c1f28330d" name="Lower" value="*">
+                <elementDefinition Id="b49dfcca-d1bc-4a58-89fc-e85b6ad966fa" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="37a95740-aebd-467a-8749-cc6fa95f798c" name="Upper" value="*">
+                <elementDefinition Id="c1a3a930-ff91-4d95-a67d-f0a934d476ff" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="4d959030-40ea-4985-b879-cb55bc535541" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5b2453ab-db3c-432e-bb0a-771014781781" LastKnownName="TemplateSlot" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="0b79eb34-b22c-4f6d-9adf-24e7dface09e" name="LoadGlobalTemplate" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9da13a37-de92-453a-8ba6-c374cc5d56ba" />
+          </operation>
+          <operation Id="ec553d5e-c712-42de-a7ba-6052b6626775" name="LoadLocalTemplate" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="160542e9-b59c-42b1-86f6-bbc56a9bdd7c" />
+          </operation>
+          <operation Id="c0ce5eee-7aa2-4bfb-b6f6-21841bd032e3" name="GetAllTemplateSlots" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5c1d6bbd-b372-499d-a3be-f901d961afd0" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -352,6 +381,34 @@
             <elementDefinition Id="3cebb5a7-d493-416b-a11e-727cc1ecd8b3" />
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="98f18b88-699e-4809-a9d4-0fc14c873fbc" name="GetGlobalTemplate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2ca6e1bb-3517-4d15-9ecb-409969d5bcd3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="993c7085-420f-496a-ab9f-7669e3bb59b0" direction="Return">
+                  <elementDefinition Id="d9262f7c-a7e0-4d2f-a002-14fae544ec49" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7ffedc9f-4ea2-4263-9150-a7b5657f7c8d" LastKnownName="DisplayTemplateInfo" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c529b6c4-8b3b-4f07-b649-cad974997c3f" name="GetLocalTemplate" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1a5f71b7-cc74-4bf9-b6dc-9dc56ac08c7e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d0d3ec30-6aa6-475f-9f41-fcccb83bfeda" direction="Return">
+                  <elementDefinition Id="6f13caf9-1f61-4a9c-a53e-5cd2525d46c4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7ffedc9f-4ea2-4263-9150-a7b5657f7c8d" LastKnownName="DisplayTemplateInfo" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -859,6 +916,31 @@
             <elementDefinition Id="da5bc767-4b2b-42b4-be67-174306cf16e8" />
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="c702b310-c16f-4e82-bce9-b4fb94fd36d9" name="GetTemplateSlots" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f44978be-e5b3-469b-b345-772fd8cac7c2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e0392185-174f-4676-9802-8a761b3e1ebb" direction="Return">
+                  <lowerValueInternal>
+                    <literalString Id="2f24311f-db64-484a-b953-a0392f416941" name="Lower" value="*">
+                      <elementDefinition Id="94cfd7e4-a3c6-405e-a9e6-3c8f6358da79" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="71c91cba-5d64-4dbb-8f87-9ece460e34d8" name="Upper" value="*">
+                      <elementDefinition Id="76e39572-d6c7-4091-acd4-ca4759f63150" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="405478d6-2c95-40b7-a0b0-fa868c9ad110" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5b2453ab-db3c-432e-bb0a-771014781781" LastKnownName="TemplateSlot" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -1039,6 +1121,11 @@
     <packageHasNamedElement>
       <referencedType Id="5bfe10e7-6e39-47f8-8593-f61706652320" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
         <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5b2453ab-db3c-432e-bb0a-771014781781" name="TemplateSlot" isAbstract="false" isLeaf="false" cachedFullName="CDE::CDE::UI::TemplateSlot">
+        <elementDefinition Id="a5bd5e62-2519-4bb4-ba57-1eb3d39e2aa4" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
